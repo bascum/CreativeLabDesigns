@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #6ec1e4;
+    --secondary-color: #54595f;
+    --text-color: #7a7a7a;
+    --tertiary-color: #61ce70;
+    --link-background: #0bbd97;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+ul {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 100%;
+}
+
+main {
+    margin: auto;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(237,237,237);
+    background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(144,255,216,1) 41%, rgba(0,185,255,1) 100%);
+}
+
+img {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    height: 15vh;
+}
+
+li, a, button{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li{
+    padding: 0 20px;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-links li:hover{
+    background-color: var(--link-background);
+}
+
+button {
+    padding: 9px 25px;
+    margin-right: 20px;;
+    background-color: var(--tertiary-color);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
