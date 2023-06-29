@@ -52,12 +52,14 @@ img {
 }
 
 header{
+    position: sticky;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: black;
     height: 15vh;
+    top: 0;
 }
 
 li, a, button{
@@ -113,4 +115,48 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.hexagon {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+       -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+         -o-transform: rotate(120deg);
+            transform: rotate(120deg);
+    cursor: pointer;
+}
+
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("..\\Images\\1677ebd2aae3abf13abc3afc47c65077.petr-sevcovic-e5Q5vWO55uU-unsplash-1024x683-1.jpeg");
+    background-size: cover;
+    background-position: center center;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+
+.hexagon2 {
+    width: 200px;
+    height: 400px;
+    margin: -80px 0 0 20px;
 }
