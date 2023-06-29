@@ -60,6 +60,7 @@ header{
     background-color: black;
     height: 15vh;
     top: 0;
+    z-index: 1;
 }
 
 li, a, button{
@@ -144,19 +145,67 @@ button:hover {
     height: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url("..\\Images\\1677ebd2aae3abf13abc3afc47c65077.petr-sevcovic-e5Q5vWO55uU-unsplash-1024x683-1.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position-x: -70px;
+    background-position-y: 80px;
+    background-size: 350px;
     visibility: visible;
-    -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
+    -webkit-transform: scale();
+    -moz-transform: scale();
+    -ms-transform: scale();
+    -o-transform: scale();
+    transform: rotate(-60deg);
+}
+
+.chef {
+    background-image: url("..\\Images\\1677ebd2aae3abf13abc3afc47c65077.petr-sevcovic-e5Q5vWO55uU-unsplash-1024x683-1.jpeg");
 }
 
 .hexagon2 {
     width: 200px;
     height: 400px;
     margin: -80px 0 0 20px;
+}
+
+.slideshow-container {
+    width: 75vw;
+    max-height: 700px;
+    aspect-ratio: 4/3;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*
+        THIS WILL MAKE THE SLIDES INVISIBLE UNLESS THEY ARE ACTIVE
+
+.invisible {
+    display: none;
+} */
+
+.myslides {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slide-photo {
+    grid-column: 6 / 11;
+    grid-row: 1 / 11;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 100%;
+}
+
+.slide-background-photo {
+    height: 100%;
+    position: relative;
+    z-index: -10;
+    opacity: .5;
+    width: 100%;
+    object-fit: cover;
 }
