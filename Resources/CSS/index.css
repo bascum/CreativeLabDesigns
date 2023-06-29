@@ -126,7 +126,6 @@ button:hover {
         -ms-transform: rotate(120deg);
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
-    cursor: pointer;
 }
 
 .hexagon-in1 {
@@ -199,6 +198,9 @@ button:hover {
     margin-left: auto;
     text-align: center;
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .slide-background-photo {
@@ -208,4 +210,11 @@ button:hover {
     opacity: .5;
     width: 100%;
     object-fit: cover;
+    grid-row: 1/ 6;
+    grid-column: 1 / 6;
+}
+
+.slide-foreground-photo {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
