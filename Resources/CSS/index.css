@@ -33,13 +33,107 @@ body {
 
 nav {
     height: 100%;
+    margin-left: 120px;
+}
+
+#contact-us{
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+
+#contact-us:hover {
+    color: #255784;
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 40px var(--primary-color), 0 0 80px var(--primary-color);
+    transition-delay: 1s;
+}
+
+
+#contact-us span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+#contact-us span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color));
+}
+
+
+
+#contact-us:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+#contact-us span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--primary-color));
+}
+
+#contact-us:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+#contact-us span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--primary-color));
+}
+
+#contact-us:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+#contact-us span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--primary-color));
+}
+
+#contact-us:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
 }
 
 main {
     margin: auto;
     padding: 0;
     max-width: 1110px;
-    height: 5000px;
 }
 #you-in-mind {
     margin-top: 80px;
@@ -162,6 +256,14 @@ button {
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
+
+    box-shadow:
+    1.4px 1.4px 2.2px rgba(0, 0, 0, 0.047),
+    3.3px 3.3px 5.3px rgba(0, 0, 0, 0.07),
+    6.3px 6.3px 10px rgba(0, 0, 0, 0.088),
+    11.2px 11.2px 17.9px rgba(0, 0, 0, 0.105),
+    20.9px 20.9px 33.4px rgba(0, 0, 0, 0.122),
+    50px 50px 80px rgba(0, 0, 0, 0.15);
 }
 
 button:hover {
@@ -378,6 +480,8 @@ button:hover {
     object-fit: cover;
 }
 
+
+
 .how-do-text h2 {
     margin-left: 10px;
     font-size: 28px;
@@ -401,4 +505,256 @@ button:hover {
 #about {
     position: relative;
     top: -200px;
+}
+
+#sign-up {
+    margin-top: 80px;
+    height: 555px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "image signUp signUp"
+        "image text text"
+        "image . .";
+}
+
+#sign-up-for-free {
+    grid-area: signUp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-up-for-free h1 {
+    font-size: 44px;
+}
+
+#sign-up-text{
+    margin: 20px;
+    background-color: white;
+    grid-area: text;
+    text-align: center;
+}
+
+#sign-up-text h3 {
+    margin: 20px;
+    font-size: 24px;
+}
+
+#man-and-wife {
+    grid-area: image;
+}
+
+#man-and-wife img {
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#services {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    height: 600px;
+    position: relative;
+}
+
+.service-header {
+    background-color: var(--secondary-color);
+    height: 18%;
+}
+
+.service-header h3 {
+    color: white;
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.service-header p {
+    color: white;
+    font-size: 12px;
+}
+
+.service-body ul {
+    margin-top: 70px;
+    list-style: none;
+}
+
+.service button {
+    position: absolute;
+    width: 250px;
+    bottom: 20px;
+    right: 10px;
+}
+
+.service ul li{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.bottom-border::after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+}
+
+.list-img {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.service-body p {
+    width: 80%;
+    font-size: 16px;
+}
+
+.bottom-margin {
+    margin-bottom: 50px;
+}
+
+#services-wide {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    justify-content: space-between;
+}
+
+.service-wide {
+    width: 48%;
+    text-align: center;
+    background-color: white;
+    height: 600px;
+    position: relative;
+}
+
+.service-wide .list-img {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 50px;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.service-wide button {
+    position: absolute;
+    width: 250px;
+    bottom: 20px;
+    right: 100px;
+}
+
+.service-wide .service-body {
+    text-align: left;
+}
+
+.service-wide .service-body p {
+    float: left;
+    margin-right: 33px;
+    margin-left: 10px;
+    width: 65%;
+}
+
+.service-wide ul li{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#customize {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#customize h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#customize button {
+    margin-top: 30px;
+    height: 50px;
+    width: 330px;
+    border: 4px solid rgba(0, 0, 0, .5);
+    margin-bottom: 50px;
+}
+
+#customize button a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#creative-lab-designs {
+    background-color: white;
+    display: flex;
+    max-width: 1110px;
+    min-width: 1024;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#creative-lab-designs img{
+    width: 90%;
+    object-fit: cover;
+}
+
+#cdl-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cdl-text {
+    margin: 10px;
+    margin-top: 0;
+}
+
+#cdl-text h1 {
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#cdl-text p {
+    font-size: 18px;
 }
