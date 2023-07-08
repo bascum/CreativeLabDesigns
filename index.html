@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.0.3/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.0.3/swiper-bundle.css">
     <title>Creative Lab Design</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
             <span></span>
             <span></span>
             Contact Us
-          </a>
+        </a>
     </header>
 
     <!-- This is the slideshow container -->
@@ -331,12 +333,80 @@
         </div>
     </div>
 
+    <div id="reviews">
+        <p class="header-text">We are working with some amazing brands...</p>
+        <h1>See what out partners are saying</h1>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="person-image">
+                        <img src="Resources\Images\Zizi-Headshot.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide-text">
+                        <div class="text">
+                            <p>Starting a new business can be stressful and overwhelming. There are so many components that you don’t even think about. Chris and Tyler helped us by providing time based goals and an outline of objectives as we went through the website development process. They helped us to create a stunning logo as well as a slogan. When you work with this company they truly become your cheerleaders and help you to lay a solid foundation for your new business. I appreciate their patience especially when it comes to design preferences for logos and business cards. They really listened to what we wanted and are able to execute a professional product based on the details. We also greatly benefited from the social media trainings.</p>
+                            <br>
+                            <p>- Zizi Asfour</p>
+                            <p>Founder, Ztastic Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="person-image">
+                        <img src="Resources\Images\DrY-Pict-Purple-HR.png" alt="">
+                    </div>
+                    <div class="swiper-slide-text">
+                        <div class="text">
+                            <p>Thanks for all your support, patience, and expertise developing my website. When my clients visit my website, they always compliment me about how professional the site looks. You listened to all my scattered ideas and transformed them into concise pages, entries, and links that make my website unique. You are very thorough. You gave me so many ideas of how to brand out my business. You are the best web designer ever. I really appreciate the quality of work you do  and I will always recommend you whenever possible.</p>
+                            <br>
+                            <p>- Dr Pascual Yacovodonato</p>
+                            <p>Founder, Dr. Y. Educational Consulting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
 
     <footer>
         <a href="https://www.flaticon.com/free-icons/photograph" title="photograph icons">Photograph icons created by Dave Gandy - Flaticon</a>
     </footer>
     <!-- End Slideshow-->
     <script src="Resources\JS\slides.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.3/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.3/swiper-bundle.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "1",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
