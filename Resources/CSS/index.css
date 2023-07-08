@@ -462,7 +462,7 @@ button:hover {
     justify-content: center;
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: var(--primary-color);
     border-radius: 25px;
     grid-column: 1;
     box-shadow: 10px 10px 19px 0px black;
