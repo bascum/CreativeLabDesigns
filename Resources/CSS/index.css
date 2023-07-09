@@ -36,6 +36,11 @@ nav {
     margin-left: 120px;
 }
 
+#logo {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 #contact-us{
     margin-right: 20px;
     position: relative;
@@ -132,9 +137,12 @@ nav {
 
 main {
     margin: auto;
+    position: relative;
     padding: 0;
     max-width: 1110px;
 }
+
+
 #you-in-mind {
     margin-top: 80px;
     margin-left: 180px;
@@ -256,7 +264,6 @@ button {
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
-
     box-shadow:
     1.4px 1.4px 2.2px rgba(0, 0, 0, 0.047),
     3.3px 3.3px 5.3px rgba(0, 0, 0, 0.07),
@@ -264,6 +271,10 @@ button {
     11.2px 11.2px 17.9px rgba(0, 0, 0, 0.105),
     20.9px 20.9px 33.4px rgba(0, 0, 0, 0.122),
     50px 50px 80px rgba(0, 0, 0, 0.15);
+}
+
+button a {
+    color: white;
 }
 
 button:hover {
@@ -502,10 +513,11 @@ button:hover {
     justify-content: space-between;
 }
 
-#about {
+.nav-link {
     position: relative;
     top: -200px;
 }
+
 
 #sign-up {
     margin-top: 80px;
@@ -724,7 +736,6 @@ button:hover {
     background-color: white;
     display: flex;
     max-width: 1110px;
-    min-width: 1024;
     margin-left: auto;
     margin-right: auto;
 }
@@ -762,7 +773,6 @@ button:hover {
 #reviews {
     height: 600px;
     max-width: 1110px;
-    min-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -860,7 +870,6 @@ footer {
 .center {
     margin-left: auto;
     margin-right: auto;
-    min-width: 1024px;
     max-width: 1110px;
 }
 
@@ -897,4 +906,73 @@ footer {
 #right-footer i {
     margin: 2px;
     color: white;
+}
+
+#mobile-nav-bar {
+    display: none;
+}
+
+#mobile-nav-bar-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    header ul, li, .nav-links, #contact-us{
+        display: none;
+    }
+
+    #mobile-nav-bar {
+        background-color: #46ACC2;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        font-family: sans-serif;
+        color: white;
+        position: fixed;
+    }
+
+    #mobile-nav-bar-toggle {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    #services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #services-wide {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #reviews {
+        max-width: 425px;
+        height: 900px;
+    }
+
+    .swiper {
+        height: 700px;
+        max-width: 375px;
+    }
+
+    #footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    html, main{
+        overflow-x: hidden;
+    }
 }
