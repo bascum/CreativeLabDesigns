@@ -580,11 +580,13 @@ button:hover {
     background-color: white;
     height: 600px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-header {
     background-color: var(--secondary-color);
-    height: 18%;
+    height: 18% !important;
 }
 
 .service-header h3 {
@@ -604,11 +606,20 @@ button:hover {
     list-style: none;
 }
 
-.service button {
-    position: absolute;
-    width: 250px;
-    bottom: 20px;
-    right: 10px;
+.button-centered {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-centered button {
+    margin: 0;;
 }
 
 .service ul li{
@@ -666,7 +677,8 @@ button:hover {
     text-align: center;
     background-color: white;
     height: 600px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-wide .list-img {
@@ -677,13 +689,6 @@ button:hover {
     margin-left: 50px;
     margin-top: 3px;
     margin-bottom: 7px;
-}
-
-.service-wide button {
-    position: absolute;
-    width: 250px;
-    bottom: 20px;
-    right: 100px;
 }
 
 .service-wide .service-body {
@@ -1140,8 +1145,20 @@ footer {
         margin-bottom: 15px;
     }
 
-    .service button {
-        right: 23px;
+    .button-centered {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-centered button {
+        margin: 0;;
     }
 
     .service-wide {
