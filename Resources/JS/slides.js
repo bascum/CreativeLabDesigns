@@ -1,6 +1,6 @@
 var slideIndex = 0; //current slide
 showSlides()
-autoSlides(5000); // makes current slide show and sets all other slides to invisible
+//autoSlides(5000); // makes current slide show and sets all other slides to invisible
 
 // Incriments current slide used to make slideshow automatic
 function plusSlides(n) {
@@ -32,7 +32,11 @@ function showSlides() { // Input slide index to show 0 - slide.length - 1
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    slides[slideIndex].style.display = "grid"; // sets active slide to display in grid
+    if (screen.width <= 425){
+        slides[slideIndex].style.display = "flex";
+    } else {
+        slides[slideIndex].style.display = "grid"; // sets active slide to display in grid
+    }
     dots[slideIndex].className += " active"; // button corresponding to slide marked active'
     if (slideIndex === slides.length) {slideIndex = 0; console.log("N === slide.length")}
     slideIndex++;
