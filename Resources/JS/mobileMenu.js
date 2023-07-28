@@ -24,12 +24,14 @@ document.addEventListener("click", (evt) => {
     } else {
         elem = navBarToggle;
     }
+
     const outsideClick = !elem.contains(evt.target);
     if (outsideClick) {
         if (menuToggled) {
             toggleMenu();
         }
     }
+
     if (!menuToggled) {
         if(!outsideClick){
             toggleMenu();
