@@ -1,6 +1,6 @@
 var slideIndex = 0; //current slide
 showSlides()
-//autoSlides(5000); // makes current slide show and sets all other slides to invisible
+autoSlides(5000); // makes current slide show and sets all other slides to invisible
 
 // Incriments current slide used to make slideshow automatic
 function plusSlides(n) {
