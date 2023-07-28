@@ -578,11 +578,21 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .service-header {
     background-color: var(--secondary-color);
     height: 18% !important;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
 }
 
 .service-header h3 {
@@ -675,6 +685,11 @@ button:hover {
     height: 600px;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .service-wide .list-img {
