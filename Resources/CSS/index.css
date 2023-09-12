@@ -239,6 +239,10 @@ li, a, button{
     align-items: center;
 }
 
+.nav-link-a {
+    height: 100%;
+}
+
 
 .nav-links li:hover{
     background-color: var(--primary-color);
@@ -1031,6 +1035,42 @@ footer {
 
 #just-here-to-space-header {
     display: none;
+}
+
+#privacy-policy {
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+#privacy-policy h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+#privacy-policy-text {
+    margin-top: 40px;
+    background-color: rgba(223, 223, 223, 0.508);
+}
+
+#privacy-policy-text p {
+    font-size: 18px;
+    margin: 16px
+}
+
+#privacy-policy strong {
+    font-weight: 700;
+}
+
+#privacy-policy li {
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 50px;
+    color: #333;
+}
+
+#privacy-policy ul {
 }
 
 @media only screen and (max-width: 1160px) and (min-width: 426px) {
